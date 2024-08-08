@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@totemwt/react-native-text-editor": ["./src/index"]
+      "@totemwt/react-native-text-editor": ["./src/index"] // import * from '@totemwt/react-native-text-editor'
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
