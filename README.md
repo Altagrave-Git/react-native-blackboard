@@ -1,4 +1,4 @@
-# React Native Rich Text Editor
+# React Native Text Editor
 
 ## Installation
 
