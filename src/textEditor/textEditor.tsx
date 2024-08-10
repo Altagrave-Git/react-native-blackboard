@@ -2,12 +2,12 @@ import WebView from 'react-native-webview';
 import { StyleSheet } from 'react-native';
 
 type TextEditorProps = {
-  data: string | null;
-  setData: (data: string) => void | null;
+  data?: string;
+  setData?: (data: string) => void;
 };
 
 const TextEditor = ({ data, setData }: TextEditorProps) => {
-  console.log('data:', data);
+  console.log(data);
   console.log(setData);
 
   return (
