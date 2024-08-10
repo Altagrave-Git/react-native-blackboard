@@ -1,30 +1,28 @@
-import { useState, useEffect } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from '@totemwt/react-native-text-editor';
+import { useState } from 'react';
+import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
+
+import { TextEditor } from '@totemwt/react-native-text-editor';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
+  const [result, setResult] = useState<number | undefined>(1);
 
-  useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  if (result === undefined) setResult(1);
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView
+      style={styles.container}
+      edges={['top', 'right', 'bottom', 'left']}
+    >
+      <TextEditor />
+      <StatusBar style="light" backgroundColor="#000" />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
   },
 });
