@@ -3,20 +3,14 @@
 ## Installation
 
 ```sh
-npm install @totemwt/react-native-text-editor
+npm install react-native-blackboard
 ```
 
 ## Usage
 
-
-```js
-import { multiply } from '@totemwt/react-native-text-editor';
-
-// ...
-
-const result = await multiply(3, 7);
 ```
-
+TBA
+```
 
 ## Contributing
 
