@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 
-import { TextEditor } from '@totemwt/react-native-text-editor';
+import { TextEditor } from 'react-native-blackboard';
 
 export default function App() {
   const [result, setResult] = useState<number | undefined>(1);
