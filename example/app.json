@@ -14,14 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "totemwt.reactnativetexteditor.example"
+      "bundleIdentifier": "reactnativeblackboard.example"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "totemwt.reactnativetexteditor.example"
+      "package": "reactnativeblackboard.example"
     },
     "web": {
       "favicon": "./assets/favicon.png"
